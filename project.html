@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WD-MAJOR-MAY</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div align="center" id="maindiv">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <form>
+            <br><br><br>
+            <input type="text" id="taskname" class="maindiv" placeholder="Name your task">
+            <br><br>
+            <input type="text" id="taskdesc" class="maindiv" placeholder="Task Description">
+            <br><br>
+        </form>
+        <select id="priority">
+            <option selected disabled><b>Select priority</b></option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <br>
+        <br>
+        <button id="btn" onclick="aftersave()"><b>Save</b></button>
+        <br>
+    </div>
+    <table id="display" align="center">
+        <thead>
+        <tr id="all-rows">
+            <th>Task Name</th> 
+            <th>Task Description</th>
+            <th>priority</th> 
+        </thead>
+        </tr>
+    </table>
+
+    <table id="allfilterlow">
+    <thead>
+        <tr>
+            <th>Task Name</th>
+            <th>Task Description</th>
+        </tr>
+    </thead>
+    </table>
+
+    <table id="allfiltermedium">
+    <thead>
+        <tr>
+            <th>Task Name</th>
+            <th>Task Description</th>
+        </tr>
+    </thead>
+    </table>
+
+    <table id="allfilterhigh">
+    <thead>
+        <tr>
+            <th>Task Name</th>
+            <th>Task Description</th>
+        </tr>
+    </thead>
+    </table>
+    
+    <div>
+        <br>
+        <button id="low-btn" onclick="filterlow()"><b>Low</b></button>
+        <button id="medium-btn" onclick="filtermedium()"><b>Medium</b></button>
+        <button id="high-btn" onclick="filterhigh()"><b>High</b></button>
+    </div>
+    <br><br><br>
+    <footer>
+        <marquee direction="left"><b><h2>Thank you and visit again</h2></b></marquee>
+    </footer>
+    <script src="task.js"></script>
+</body>
+</html>
